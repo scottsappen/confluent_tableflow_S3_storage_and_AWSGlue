@@ -14,6 +14,10 @@ If you want to just follow the website verbatim, that's fine. Otherwise, continu
 - this repo leverage the Confluent CLI
 - some additional explanation, particulary on Step 4
 
+At a high level, the data flow looks like this:
+
+Python mock IoT data → Confluent Kafka Topic → Tableflow → AWS S3 (Iceberg format) + AWS Glue Catalog ← AWS Athena
+
 If you get stuck, remember in the Confluent Cloud UI is the Confluent AI Assistant. It can not only answer questions, but generate code for you!
 
 In the link above regadring the original hands-on example from Confluent, there are 5 steps:
