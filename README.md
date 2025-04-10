@@ -14,7 +14,7 @@ If you want to just follow the website verbatim, that's fine. Otherwise, continu
 - this repo leverage the Confluent CLI
 - some additional explanation, particulary on Step 4
 
-At a high level, the data flow looks like this:
+At a high level, the topology looks like this:
 
 Python mock IoT data → Confluent Kafka Topic → Tableflow → AWS S3 (Iceberg format) + AWS Glue Catalog ← AWS Athena
 
