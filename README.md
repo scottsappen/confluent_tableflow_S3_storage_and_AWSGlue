@@ -21,11 +21,11 @@ Python mock IoT data → Confluent Kafka Topic → Tableflow → AWS S3 (Iceberg
 If you get stuck, remember in the Confluent Cloud UI is the Confluent AI Assistant. It can not only answer questions, but generate code for you!
 
 In the link above regadring the original hands-on example from Confluent, there are 5 steps:
-Step 1: Create a topic and publish data
-Step 2: Configure your S3 bucket and provider integration
-Step 3: Enable Tableflow on your topic
-Step 4: Configure AWS Glue Catalog integration
-Step 5: Query Iceberg tables
+- Step 1: Create a topic and publish data
+- Step 2: Configure your S3 bucket and provider integration
+- Step 3: Enable Tableflow on your topic
+- Step 4: Configure AWS Glue Catalog integration
+- Step 5: Query Iceberg tables
 
 In this repo, the only thing you are changing is Step 1. So let's do that.
 
