@@ -182,9 +182,12 @@ At the cluster level:
 - After creating the integration, don't worry if the status says disconnected. The error may say something like insufficient permissions.
 
 Next, at the environment level:
-- Click on Add Integration.
+- Click on Add Integration. Just need the trust policy JSON found in this step, you don't actually need to finish this step per se.
 - I chose Existing Role because I am going to add this new trust policy to my existing role. 
 - I took this trust policy JSON and created a new IAM policy in AWS and attached it to my existing IAM role and continued on to create the integration.
+- You just needed this trust policy in JSON so you could copy/paste it, you do not need to continue. IOW, you don't need to create a new integration.
+
+Create that new IAM policy with the glue JSON and attach it to your existing role in AWS.
 
 Your new glue policy will look something like this:
 
@@ -240,7 +243,7 @@ Your new glue policy will look something like this:
   </tr>
 </table>
 
-Finally, I went back to the Tableflow navigation at the cluster level and clicked on Start on my new integration and it worked.
+Finally, I went back to the Tableflow navigation at the cluster level and clicked on Start on my new integration and it worked. Just click resume/start. Now that your AWS glue policy and role have been updated, this should work.
 
 <table>
   <tr>
